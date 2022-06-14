@@ -1,9 +1,4 @@
-![Terraform](https://img.shields.io/badge/Terraform-v1.2.2-blue)
-
-![Azurerm](https://img.shields.io/badge/AzureRM-v3.0.0-blue)
-
-![GitHub](https://img.shields.io/github/license/erleonard/terraform-az-aca)
-
+![CI](https://github.com/erleonard/terraform-az-aca/actions/workflows/blank.yml/badge.svg) ![GitHub](https://img.shields.io/github/license/erleonard/terraform-az-aca) ![Terraform](https://img.shields.io/badge/Terraform-v1.2.2-blue) ![Azurerm](https://img.shields.io/badge/AzureRM-v3.0.0-blue)
 
 # terraform-az-aca
 Terraform deployment for Azure Container Apps
