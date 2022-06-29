@@ -3,8 +3,19 @@ variable "resource_group_name" {
     default     = "aca-rg"
     type        = string
 }
-variable "location" {
+
+variable "location_name" {
     description = "Specify the Azure region in which the resources will be deployed to."
     default     = "canadacentral"
+    type        = string
+}
+
+variable "log_analytics_workspace_name" {
+    description = "Specify the name of the Log Analytics Workspace"
+    type        = string
+}
+
+variable "container_apps_name" {
+    description = "Specify the name of the Azure Container Apps"
     type        = string
 }
