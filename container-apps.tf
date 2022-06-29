@@ -1,6 +1,6 @@
 resource "azapi_resource" "aca" {
   type      = "Microsoft.App/managedEnvironments@2022-03-01"
-  name      = "acatest"
+  name      = var.container_apps_name
   parent_id = azurerm_resource_group.rg.id
   location  = azurerm_resource_group.rg.location
 
@@ -26,8 +26,6 @@ resource "azapi_resource" "hello" {
   body = jsonencode({
     properties = {
       configuration = {
-          #secrets = ""
-          #registries = ""
           activeRevisionsMode = "Single"
           ingress = {
               external = true
@@ -39,10 +37,6 @@ resource "azapi_resource" "hello" {
           {
             name  = "simple-hello-world-container"
             image = "mcr.microsoft.com/azuredocs/containerapps-helloworld:latest"
-            #resources = {
-            #    cpu = .5
-            #    memory = 1Gi
-            #  }
           }
         ]
         revisionSuffix = "1"
